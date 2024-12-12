@@ -17,14 +17,12 @@ code {
 }
 
 .right-image {
-  background-image: url("https://thewebmax.org/modern/images/main-slider/slider3/slide1.jpg");
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: cover;
 }
 
 .left-image {
-  background-image: url("https://thewebmax.org/modern/images/main-slider/slider3/slide1-b.jpg");
   background-repeat: no-repeat;
   background-position: 0% 100%;
   background-size: cover;
