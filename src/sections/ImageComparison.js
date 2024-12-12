@@ -97,6 +97,7 @@ const ImageComparison = () => {
       const mouseX = gallery.getBoundingClientRect().width / 2 - e.clientX;
       const width = gallery.getBoundingClientRect().width;
       const moveX = (mouseX / width) * 50;
+
       gsap.to(leftContentRef.current, {
         x: moveX,
         ease: "power2.out",
@@ -108,7 +109,6 @@ const ImageComparison = () => {
     };
 
     window.addEventListener("mousemove", mouseMoveHandler);
-
     window.addEventListener("resize", resizeHandler);
 
     return () => {
@@ -168,10 +168,10 @@ const ImageComparison = () => {
         }}
       >
         <div className="" ref={rightContentRef}>
-          <h1 className="text-[120px] leading-[120px] uppercase text-white font-[400] pb-[25px] playfair-display tracking-[25px]">
+          <h1 className="min-[1000px]:text-[120px] min-[800px]:max-[1000px]:text-[90px] min-[500px]:max-[800px]:text-[50px] text-[30px] min-[1000px]:pb-[25px] min-[800px]:max-[1000px]:pb-[20px] min-[500px]:max-[800px]:pb-[15px] pb-[10px] min-[1000px]:leading-[120px] min-[800px]:max-[1000px]:leading-[90px] min-[500px]:max-[800px]:leading-[50px]  leading-[50px] uppercase text-white font-[400] playfair-display tracking-[25px]">
             {data[activeIndex].title}
           </h1>
-          <p className="text-[13px] font-[400] uppercase text-white pb-[50px] playfair-display tracking-[5px]">
+          <p className="min-[800px]:text-[13px] text-[10px] font-[400] uppercase text-white pb-[50px] playfair-display tracking-[5px] px-[20px]">
             {data[activeIndex].text}
           </p>
           <button
@@ -193,10 +193,10 @@ const ImageComparison = () => {
         }}
       >
         <div className="" ref={leftContentRef}>
-          <h1 className="text-[120px] leading-[120px] uppercase text-black font-[400] pb-[25px] playfair-display tracking-[25px]">
+          <h1 className="min-[1000px]:text-[120px] min-[800px]:max-[1000px]:text-[90px] min-[500px]:max-[800px]:text-[50px] text-[30px] min-[1000px]:pb-[25px] min-[800px]:max-[1000px]:pb-[20px] min-[500px]:max-[800px]:pb-[15px] pb-[10px]  min-[1000px]:leading-[120px] min-[800px]:max-[1000px]:leading-[90px] min-[500px]:max-[800px]:leading-[50px]  leading-[50px]  uppercase text-black font-[400] playfair-display tracking-[25px]">
             {data[activeIndex].title}
           </h1>
-          <p className="text-[13px] font-[400] uppercase text-black pb-[50px] playfair-display tracking-[5px]">
+          <p className="min-[800px]:text-[13px] text-[10px] font-[400] uppercase text-black pb-[50px] playfair-display tracking-[5px] px-[20px]">
             {data[activeIndex].text}
           </p>
           <button
